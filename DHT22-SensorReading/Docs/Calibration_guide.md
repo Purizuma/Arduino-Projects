@@ -36,3 +36,20 @@ To minimize error during calibration:
    ```cpp
    float correctedTemp = dht.readTemperature() + tempOffset;
    float correctedHumidity = dht.readHumidity() + humidityOffset;
+   ```
+   
+## 🧰 4. Optional Software Offset
+  
+If needed, define offsets based on your validation:
+   ```cpp
+   const float tempOffset = -0.4;     // Example: sensor reads 0.4°C too high
+   const float humidityOffset = +2.0; // Example: sensor reads 2% RH too lo
+   ```
+Apply these in your display or logging functions.
+
+## 📎 5. Notes on Long-Term Use
+  - DHT22 sensors may drift over time—revalidate monthly if used in critical applications.
+  - Avoid condensation or high humidity exposure beyond rated limits.
+  - Store unused sensors in dry, static-free containers.
+
+
