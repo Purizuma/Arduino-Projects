@@ -15,6 +15,6 @@ This project demonstrates how to read temperature and humidity data from a DHT22
 - Breadboard and jumper wires
 
 ## 📐 Wiring Diagram
-See `Hardware/wiring_diagram.png` for full schematic.
+See `Hardware/Wiring_diagram.png` for full schematic.
 
 ## 📁 Repository Structure
