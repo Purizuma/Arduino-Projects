@@ -37,6 +37,8 @@ To minimize error during calibration:
    float correctedTemp = dht.readTemperature() + tempOffset;
    float correctedHumidity = dht.readHumidity() + humidityOffset;
    ```
+
+---
    
 ## 🧰 4. Optional Software Offset
   
@@ -46,6 +48,8 @@ If needed, define offsets based on your validation:
    const float humidityOffset = +2.0; // Example: sensor reads 2% RH too lo
    ```
 Apply these in your display or logging functions.
+
+---
 
 ## 📎 5. Notes on Long-Term Use
   - DHT22 sensors may drift over time—revalidate monthly if used in critical applications.
