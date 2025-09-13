@@ -90,3 +90,15 @@ This guide outlines common issues encountered when working with the DHT22 sensor
   ```cpp
   DHT dht(DHTPIN, DHTTYPE);
   Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+  ```
+
+  ## ✅ Final Checklist
+  
+  | Component | Checkpoint |
+  | :---  | :--- |
+  | DHT22 | Correct pin, stable power, proper library |
+  | OLED  | I2C wiring, address, library compatibility |
+  | Code  | Sensor type, pin definitions, initialization |
+  | Power | 5V supply, no voltage drops or noise |
+
+  For reproducibility, document any changes made during troubleshooting and include them in your project notes or README.
